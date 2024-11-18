@@ -1,4 +1,4 @@
-@use 'base/index';
-@use 'components/index';
-@use 'layout/index';
-@use 'theme/index';
+@import url('base/_index.scss');
+@import url('components/_index.scss');
+@import url('layout/_index.scss');
+@import url('theme/_index.scss');

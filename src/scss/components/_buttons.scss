@@ -1,0 +1,32 @@
+button {
+  border: none;
+  font-weight: 700;
+  font-size: 0.8em;
+  padding: 1em 2em;
+  border-radius: 1em;
+  transition: 0.4s ease all;
+  width: 11em;
+}
+
+.btn-primary {
+  background-color: var(--white-010);
+  color: var(--orange-010);
+
+  &:hover {
+    outline: 0.1em solid var(--white-010);
+    background-color: transparent;
+    color: var(--white-010);
+  }
+}
+
+
+.btn-secondary {
+  outline: 0.1em solid var(--white-010);
+  background-color: transparent;
+  color: var(--white-010);
+
+  &:hover {
+    background-color: var(--white-010);
+    color: var(--orange-010);
+  }
+}

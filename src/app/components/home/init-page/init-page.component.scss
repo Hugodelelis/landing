@@ -1,0 +1,37 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+
+  height: 35em;
+  color: var(--white-010);
+
+  background-image: url("/assets/imgs/mobile/bg-pattern-intro-mobile.svg"), var( --gradient-010);
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+  border-radius: 0 0 0 10em;
+
+  text-align: center;
+
+  h2 {
+    font-size: 2.3em;
+  }
+
+  h3 {
+    width: 90%;
+  }
+
+  .buttons {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+
+}

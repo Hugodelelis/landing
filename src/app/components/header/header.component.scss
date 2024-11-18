@@ -1,0 +1,14 @@
+:host {
+  header {
+    position: fixed;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 1em;
+
+    h1 {
+      color: var(--white-010);
+    }
+  }
+}
