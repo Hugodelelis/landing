@@ -12,7 +12,7 @@ export class HeaderComponent {
   links = signal<nav[]>([
     {
       name: 'Home',
-      path: '#home'
+      path: '#'
     },
 
     {

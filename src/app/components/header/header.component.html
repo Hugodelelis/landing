@@ -9,7 +9,7 @@
     <nav>
       <ul>
         @for(link of links(); track link) {
-          <li><a (click)="nav()" [href]="link.path"> {{ link.name }} </a></li>
+          <li><a [href]="link.path" (click)="nav()"> {{ link.name }} </a></li>
         }
       </ul>
     </nav>
@@ -21,7 +21,7 @@
     <nav>
       <ul>
         @for(link of links(); track link) {
-          <li><a> {{ link.name }} </a></li>
+          <li><a [href]="link.path"> {{ link.name }} </a></li>
         }
       </ul>
     </nav>

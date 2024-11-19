@@ -15,6 +15,7 @@
 
     nav ul li a{
       transition: 0.4s ease all;
+      color: var(--white-010);
 
       &:hover {
         color: var(--orange-010);
@@ -63,7 +64,6 @@
 
         li a {
           font-size: 1.4em;
-          color: var(--white-010);
         }
       }
     }
