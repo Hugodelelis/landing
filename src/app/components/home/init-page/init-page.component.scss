@@ -14,7 +14,7 @@
   background-attachment: fixed;
   background-position: center;
 
-  border-radius: 0 0 0 10em;
+  border-radius: 0 0 0 7em;
 
   text-align: center;
 
@@ -34,4 +34,8 @@
     gap: 1em;
   }
 
+  @media(min-width: 992px) {
+    background-image: url("/assets/imgs/desktop/bg-pattern-intro-desktop.svg"), var( --gradient-010);
+    border-radius: 0 0 0 10em;
+  }
 }

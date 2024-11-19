@@ -1,5 +1,28 @@
-<header>
-  <h1>Blogr</h1>
+<header class="mobile-header">
+  <h1><a href="#">Blogr</a></h1>
+  @if(navToogle === false) {
+    <button app-button class="btn-menu" (click)="nav()"><img src="/assets/icons/icon-hamburger.svg" alt="menu"></button>
+  }
 
-  <img src="/assets/icons/icon-hamburger.svg" alt="menu">
+  @if(navToogle === true) {
+    <button app-button class="btn-menu" (click)="nav()"><img src="/assets/icons/icon-close.svg" alt="menu"></button>
+    <nav>
+      <ul>
+        @for(link of links(); track link) {
+          <li><a (click)="nav()" [href]="link.path"> {{ link.name }} </a></li>
+        }
+      </ul>
+    </nav>
+  }
+</header>
+
+<header class="desktop-header">
+  <h1><a href="#">Blogr</a></h1>
+    <nav>
+      <ul>
+        @for(link of links(); track link) {
+          <li><a> {{ link.name }} </a></li>
+        }
+      </ul>
+    </nav>
 </header>

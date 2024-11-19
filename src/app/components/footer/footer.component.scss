@@ -1,0 +1,45 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1em;
+
+  margin-top: 3.5em;
+  background-color: var(--gray-030);
+
+  border-radius: 0 4em 0 0;
+  color: var(--white-010);
+
+  .footer-item {
+    h2 {
+      font-size: 1.2em;
+      margin-bottom: 1em;
+    }
+
+    ul{
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+
+      li {
+        font-size: 0.8em;
+      }
+    }
+  }
+
+  @media(min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3em;
+
+    h2 {
+      flex: 10%;
+    }
+
+    .footer-item {
+      flex: 10%;
+    }
+  }
+}

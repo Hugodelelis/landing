@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url('/assets/imgs/bg-pattern-circles.svg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right;
+  background-attachment: fixed;
+  background-color: var(--dark-020);
+
+  min-height: 17em;
+  color: var(--white-010);
+  margin-top: 2em;
+
+  .info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media(min-width: 992px) {
+    .info {
+      width: 60%;
+    }
+  }
+}

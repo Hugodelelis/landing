@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { nav } from '../../interfaces/header.interface';
 
 @Component({
   selector: 'app-header',
@@ -8,5 +9,36 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  links = signal<nav[]>([
+    {
+      name: 'Home',
+      path: '#home'
+    },
 
+    {
+      name: 'Introducing',
+      path: '#intro'
+    },
+
+
+    {
+      name: 'infrastructure',
+      path: '#infra'
+    },
+
+    {
+      name: 'Power',
+      path: '#power'
+    },
+  ])
+
+  navToogle: boolean = false
+
+  nav() {
+    if(this.navToogle === true) {
+      return this.navToogle = false
+    }
+
+    return this.navToogle = true
+  }
 }
